@@ -12,9 +12,7 @@ jobs:
     steps:
       - name: debug
         run: |
-          ls -a
-          ls -a ..
-          ls -a /
+          ls -a ../pacifica-ui
       - name: Install Dependencies
         run: npm ci
       - name: Build Project
