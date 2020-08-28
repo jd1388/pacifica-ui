@@ -13,7 +13,6 @@ jobs:
       - name: debug
         run: |
           ls
-          pwd
       - name: Install Dependencies
         run: npm ci
       - name: Build Project
