@@ -12,6 +12,6 @@ jobs:
     container: node:latest
     steps:
       - name: Install Dependencies
-        run: npm i
+        run: npm ci
       - name: Build Project
         run: npm run build
