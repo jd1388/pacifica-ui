@@ -25,4 +25,12 @@ describe('Login Page', () => {
         expect(usernameInput).toBeInTheDocument();
         expect(usernameInput).toHaveAttribute('type', 'password');
     });
+
+    it('has a login button', () => {
+        const { getByText } = render(LoginPage);
+        const loginButton = getByText('Login');
+
+        expect(loginButton).toBeInTheDocument();
+        expect(loginButton).toHaveAttribute('type', 'button');
+    });
 });
