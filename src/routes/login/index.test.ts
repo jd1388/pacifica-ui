@@ -9,4 +9,20 @@ describe('Login Page', () => {
 
         expect(loginPage).toBeInTheDocument();
     });
+
+    it('has an input for a username', () => {
+        const { getByLabelText } = render(LoginPage);
+        const usernameInput = getByLabelText('Username');
+
+        expect(usernameInput).toBeInTheDocument();
+        expect(usernameInput).toHaveAttribute('type', 'text');
+    });
+
+    it('has an input for a password', () => {
+        const { getByLabelText } = render(LoginPage);
+        const usernameInput = getByLabelText('Password');
+
+        expect(usernameInput).toBeInTheDocument();
+        expect(usernameInput).toHaveAttribute('type', 'password');
+    });
 });
