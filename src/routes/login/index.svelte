@@ -6,3 +6,11 @@
     <input id="password-input" type="password" />
     <button type="button">Login</button>
 </div>
+
+<style>
+    h1 {
+        color: var(--color-magenta);
+        font-size: 36pt;
+        font-style: italic;
+    }
+</style>
