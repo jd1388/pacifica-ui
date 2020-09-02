@@ -1,6 +1,7 @@
 * {
     --color-aqua: #33f2db;
     --color-magenta: #bd12e8;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -10,4 +11,9 @@ h1 {
 
 button {
     font-weight: 600;
+}
+
+body {
+    height: 100%;
+    margin: 0;
 }
