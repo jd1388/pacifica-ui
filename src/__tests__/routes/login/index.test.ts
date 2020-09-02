@@ -10,6 +10,13 @@ describe('Login Page', () => {
         expect(loginPage).toBeInTheDocument();
     });
 
+    it('displays the "Pacifica" text', () => {
+        const { getByText } = render(LoginPage);
+        const pacificaText = getByText('Pacifica');
+
+        expect(pacificaText).toBeInTheDocument();
+    });
+
     it('has an input for a username', () => {
         const { getByLabelText } = render(LoginPage);
         const usernameInput = getByLabelText('Username');
