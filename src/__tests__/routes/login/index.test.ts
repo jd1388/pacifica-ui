@@ -1,6 +1,6 @@
 import { render } from '@testing-library/svelte';
 
-import LoginPage from './index.svelte';
+import LoginPage from '../../../routes/login/index.svelte';
 
 describe('Login Page', () => {
     it('renders', () => {
